@@ -1,0 +1,97 @@
+    
+:root {
+    --blanco: #FFFFFF;
+    --grisClaro: #F3F3F3;
+    --azulGris: #C7D6E1;
+    --amarilloCute: #F1D077;
+    --grisOscuro: #A0A0A0;
+    --texto: #181B1D;
+    --color-temario: #daaf39;    
+    
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-bg {
+    background-color: #D9D9D9;
+}
+
+h1{
+    padding-top: 50px;
+}
+.navegacion-principal {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.navegacion-principal a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--texto);
+    border-radius: 3rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+    border-radius: 3rem;
+}
+
+body {
+    font-size: 100%;
+    background-color:var(--grisClaro);
+    color: var(--texto);
+    text-align: center;
+}
+.calendar{
+    padding: 20px 40px;
+}
+.months-container{
+    justify-content: center;
+    gap: 40px;
+}
+.calendar .months-container .month-container{
+    background-color: var(--blanco);
+    padding: 20px;
+    min-width: 280;
+    box-shadow: 7px 7px 10px var(--grisOscuro);
+}
+.calendar table.month th.month-title{
+    color: var(--color-temario);
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Hammersmith One', sans-serif;
+    
+}
+table.month td.first-child, table.month td.last-child, 
+table.month thead tr:nth-child(2) th:first-child
+table.month thead tr:nth-child(2) th:last-child{
+
+    color: var(--color-temario);
+}
+.calendar table.month th.day .day-content{
+    padding: 6px 8px;
+}
+table.month td.day .day-content:hover{
+    background: var(--grisOscuro);
+    color: var(--blanco);
+}
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background:transparent;
+}
+.calendar .calendar-header .year-title{
+    font-family: 'Hammersmith One', sans-serif;
+    color: var(--texto)
+}

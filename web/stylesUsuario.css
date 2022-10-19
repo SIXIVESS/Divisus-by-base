@@ -1,0 +1,157 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18 oct 2022, 19:16:20
+    Author     : chaly
+*/
+:root {
+    --blanco: #FFFFFF;
+    --grisClaro: #F3F3F3;
+    --azulGris: #C7D6E1;
+    --amarilloCute: rgba(241, 208, 119, 90%);
+    --grisOscuro: #A0A0A0;
+    --texto: #181B1D;
+    --color-temario: rgb(218, 175, 57);  
+    
+}
+body {
+    font-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--grisClaro);
+    color: var(--texto);
+    text-align: center;
+    
+}
+
+.nav-bg {
+    background-color: #D9D9D9;
+}
+
+h1{
+    padding-top: 50px;
+}
+
+.navegacion-principal {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.informacion-usuario{
+    display: flex ;
+    flex-flow: row wrap;
+    text-align: center;
+    background: var(--grisClaro);
+}
+.informacion-usuario>*{
+    padding: 50px;
+    margin: 50px;
+   
+}
+.main{
+    background: var(--blanco);
+    padding: 2rem;
+
+    font-size: 24px;
+    flex: 3;
+    order: 2;
+}
+
+.aside1{
+    background: var(--amarilloCute);
+}
+
+.aside2{
+    background: var(--amarilloCute); 
+}
+
+.aside1{
+    order: 1;
+}
+
+.aside2{
+    order: 2;
+}
+
+header{
+    background-color: var(--amarilloCute);
+    font-size: 26px;
+    padding-top: 12px;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: bold;
+}
+
+
+div #info{
+    width:85%;
+    height:500px;
+    background-color: var(--grisClaro);
+    margin:auto;
+}
+
+.navegacion-principal a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--texto);
+    border-radius: 3rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+    border-radius: 3rem;
+}
+
+.neko{
+    display: block;
+    width: 250px;
+    clip-path: circle();
+    margin: 0 auto;
+}
+
+.nombre{
+    padding-bottom: 20px; 
+    font-size: large;
+}
+
+.nombre-empresa{
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+.cuenta{
+    
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+.correo{
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+.informacion-usuario{
+    padding-bottom: 10px;
+    background-color: var(--amarilloCute);
+}
+
+
+
+.box {
+    
+    background: var(--amarilloCute);
+    display: grid;
+ 
+    grid-template-columns: 30% auto;
+    inline-size: 500px;
+
+  }
+
+  .caja1{
+    background: var(--amarilloCute);
+  }
